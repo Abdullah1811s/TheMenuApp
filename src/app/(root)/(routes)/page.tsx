@@ -243,7 +243,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start">
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <Image src="/logo.png" alt="The Menu Logo" width={200} height={200} className="w-10" />
+              <Image src="/Logo.png" alt="The Menu Logo" width={200} height={200} className="w-10" />
               <div>
                 <h2 className="text-lg font-semibold text-[#d4a373]">THE MENU</h2>
                 <p className="text-xs uppercase tracking-wide text-gray-400">YOUR WORLD, YOUR WAY</p>
