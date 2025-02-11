@@ -7,6 +7,7 @@ import RankCard from "@/components/customComponents/RankCard";
 import WeeklyRaffles from "@/components/customComponents/WeeklyRaffles";
 import CampaignPerformance from "@/components/customComponents/CampaignPerformance";
 import SpinWheel from "@/components/customComponents/SpinWheel";
+import { StatCard } from "@/components/customComponents/StatCard";
 
 
 export default function Home() {
@@ -117,7 +118,7 @@ export default function Home() {
                 alt="Referral Link"
                 width={400}
                 height={340}
-                className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[400px] rounded-xl shadow-lg"
+                className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[400px] rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:scale-110"
               />
             </div>
 
@@ -133,7 +134,7 @@ export default function Home() {
                 alt="Milestone Tracking"
                 width={400}
                 height={340}
-                className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[400px] rounded-xl shadow-lg"
+                className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[400px] rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:scale-110"
               />
             </div>
 
@@ -149,7 +150,7 @@ export default function Home() {
                 alt="Dynamic Leaderboards"
                 width={400}
                 height={340}
-                className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[400px] rounded-xl shadow-lg"
+                className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[400px] rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:scale-110"
               />
             </div>
           </div>
@@ -164,26 +165,25 @@ export default function Home() {
             <p className="text-base sm:text-base md:text-lg lg:text-xl px-4 sm:px-8 md:px-16 lg:px-24">
               Users earn points and rewards by achieving milestones
             </p>
-          </div>
-          <div>
-            <h1 className="font-bold text-start text-2xl">
+            <h1 className="font-bold text-start text-2xl flex items-center justify-center">
               Leaderboards
             </h1>
+          </div>
+
+          <div className="w-full flex items-center justify-center">
             <Lapboard />
           </div>
+
         </section>
 
-        <section className="mt-20 mb-20 w-full flex items-start">
+        <section className="mt-20 mb-20 w-full flex items-center justify-center">
           <SpinWheel />
         </section>
 
 
         <section className="mt-12 w-full">
           <RankCard />
-
         </section>
-
-
 
         <section className="mt-12 w-full">
           <WeeklyRaffles />
@@ -199,18 +199,9 @@ export default function Home() {
 
         <section className="mt-12 w-full">
           <section className="flex flex-col md:flex-row justify-center gap-6 py-10">
-            <div className="border border-black rounded-lg p-6 w-52 text-center shadow-md">
-              <h2 className="text-3xl font-bold">7k+</h2>
-              <p className="text-lg text-gray-700">User Registered</p>
-            </div>
-            <div className="border border-black rounded-lg p-6 w-52 text-center shadow-md">
-              <h2 className="text-3xl font-bold">10k+</h2>
-              <p className="text-lg text-gray-700">Referrals</p>
-            </div>
-            <div className="border border-black rounded-lg p-6 w-52 text-center shadow-md">
-              <h2 className="text-3xl font-bold">50k+</h2>
-              <p className="text-lg text-gray-700">Happy Clients</p>
-            </div>
+            <StatCard end={7000} label="User Registered" />
+            <StatCard end={10000} label="Referrals" />
+            <StatCard end={50000} label="Happy Clients" />
           </section>
 
         </section>

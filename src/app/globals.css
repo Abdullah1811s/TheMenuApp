@@ -5,7 +5,22 @@
 body {
   font-family: var(--font-lora), serif;
 }
+::-webkit-scrollbar {
+  width: 8px; 
+}
 
+::-webkit-scrollbar-track {
+  background: #1a1a1a; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DBC166; 
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e68900;
+}
 
 @layer base {
   :root {

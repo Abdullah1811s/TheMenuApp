@@ -8,8 +8,8 @@ const NavbarComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-black text-white whitespace-nowrap flex items-center justify-between rounded-[40px] mt-6 w-11/12 md:w-9/12 h-20 px-6 py-3 mx-auto relative">
-           
+        <nav className="bg-black text-white whitespace-nowrap flex items-center justify-between rounded-sm mt-6 w-11/12 md:w-9/12 h-20 px-6 py-3 mx-auto relative">
+
             <div className="flex items-center gap-2 ">
                 <img src="/Logo.png" alt="Logo" className="h-10 mr-3" />
             </div>

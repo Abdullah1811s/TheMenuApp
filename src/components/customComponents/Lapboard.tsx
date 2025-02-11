@@ -3,7 +3,14 @@ import React from "react";
 const agents = [
   {
     name: "Saymi",
-    image: "", 
+    image: "/", 
+    dayReferral: 5,
+    weeklyReferral: 2,
+    monthlyReferral: 6,
+  },
+  {
+    name: "Saymi",
+    image: "/",
     dayReferral: 5,
     weeklyReferral: 2,
     monthlyReferral: 6,
@@ -17,14 +24,7 @@ const agents = [
   },
   {
     name: "Saymi",
-    image: "",
-    dayReferral: 5,
-    weeklyReferral: 2,
-    monthlyReferral: 6,
-  },
-  {
-    name: "Saymi",
-    image: "",
+    image: "/",
     dayReferral: 5,
     weeklyReferral: 2,
     monthlyReferral: 6,

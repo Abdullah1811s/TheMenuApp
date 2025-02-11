@@ -30,7 +30,7 @@ const WeeklyRaffles = () => {
                         <img
                             src={prize.image}
                             alt={prize.alt}
-                            className="w-full h-56 object-cover"
+                            className="w-full h-64 object-cover"
                         />
                     </div>
                 ))}
