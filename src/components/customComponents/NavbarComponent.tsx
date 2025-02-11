@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Button } from "../ui/button";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const NavbarComponent = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ const NavbarComponent = () => {
         <nav className="bg-black text-white whitespace-nowrap flex items-center justify-between rounded-sm mt-6 w-11/12 md:w-9/12 h-20 px-6 py-3 mx-auto relative">
 
             <div className="flex items-center gap-2 ">
-                <img src="/Logo.png" alt="Logo" className="h-10 mr-3" />
+                <Image src="/Logo.png" alt="Logo" width={200} height={200} className="h-10 mr-3" />
             </div>
             <div className="hidden md:flex gap-8 items-center">
                 <ul className="flex gap-10 lg:gap-14 text-lg md:text-base ">

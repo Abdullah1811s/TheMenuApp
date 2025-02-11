@@ -4,8 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const RankCard = () => {
-  const [timeLeft, setTimeLeft] = useState("03:12:59"); // Placeholder time
-
+  
   const players = [
     {
       rank: "#1",
@@ -40,7 +39,7 @@ const RankCard = () => {
     <div className="flex flex-col items-center space-y-10">
       <h2 className="text-3xl font-bold">Countdown timers for ongoing raffles and games</h2>
       <p className="text-2xl">
-        League will end in <span className="text-yellow-500 font-extrabold">{timeLeft}</span>
+        League will end in <span className="text-yellow-500 font-extrabold">03:12:59</span>
       </p>
 
       <div className="flex flex-col md:flex-row justify-center gap-10">

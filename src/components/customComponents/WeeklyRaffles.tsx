@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const WeeklyRaffles = () => {
     const prizes = [
@@ -27,9 +28,11 @@ const WeeklyRaffles = () => {
                         key={prize.id}
                         className="border-4 border-purple-400 rounded-2xl overflow-hidden"
                     >
-                        <img
+                        <Image
                             src={prize.image}
                             alt={prize.alt}
+                            width={200}
+                            height={200}
                             className="w-full h-64 object-cover"
                         />
                     </div>

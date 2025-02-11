@@ -211,7 +211,13 @@ export default function Home() {
           <div className="mt-10">
             <div className="flex flex-col md:flex-row justify-center gap-10 py-12">
               <div className="border border-gray-300 rounded-2xl p-8 w-96 shadow-xl bg-white">
-                <img src="/trophy.png" alt="Competition Icon" className="w-20 mx-auto mb-6" />
+                <Image
+                  src="/trophy.png"
+                  alt="Competition Icon"
+                  width={80}
+                  height={80} className="w-20 mx-auto mb-6"
+                />
+
                 <h2 className="text-2xl font-bold text-center">Competition Entries</h2>
                 <ul className="mt-4 text-gray-700 text-lg space-y-3">
                   <li>▪️ <strong>Subscriptions:</strong> Entries per competition are based on the tier (e.g., Lion Plan = 10 entries/competition).</li>
@@ -220,7 +226,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className="border border-gray-300 rounded-2xl p-8 w-96 shadow-xl bg-white">
-                <img src="/exclusive.png" alt="Membership Icon" className="w-20 mx-auto mb-6" />
+                <Image src="/exclusive.png" alt="Membership Icon" width={200} height={200} className="w-20 mx-auto mb-6" />
                 <h2 className="text-2xl font-bold text-center">Free Membership Offer</h2>
                 <p className="mt-4 text-gray-700 text-lg">
                   Users who pay the R50 access fee during the Waiting Page period will automatically receive one free month of the Lion Plan when the full platform launches. This process will be automated, with clear communication to users.
@@ -237,7 +243,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start">
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <img src="/logo.png" alt="The Menu Logo" className="w-10" />
+              <Image src="/logo.png" alt="The Menu Logo" width={200} height={200} className="w-10" />
               <div>
                 <h2 className="text-lg font-semibold text-[#d4a373]">THE MENU</h2>
                 <p className="text-xs uppercase tracking-wide text-gray-400">YOUR WORLD, YOUR WAY</p>

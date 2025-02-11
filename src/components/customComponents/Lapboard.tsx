@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const agents = [
   {
@@ -17,7 +18,7 @@ const agents = [
   },
   {
     name: "Saymi",
-    image: "",
+    image: "/",
     dayReferral: 5,
     weeklyReferral: 2,
     monthlyReferral: 6,
@@ -55,9 +56,11 @@ const Lapboard = () => {
           {agents.map((agent, index) => (
             <tr key={index} className="border-b">
               <td className="p-3 flex items-center gap-2">
-                <img
+                <Image
                   src={agent.image}
                   alt={agent.name}
+                  width={200}
+                  height={200}
                   className="w-8 h-8 rounded-full"
                 />
                 <span>{agent.name}</span>

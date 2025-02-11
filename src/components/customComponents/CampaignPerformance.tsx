@@ -12,6 +12,7 @@ import {
     Tooltip,
     Legend,
 } from "chart.js";
+import Image from "next/image";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
@@ -44,9 +45,11 @@ const CampaignPerformance = () => {
     return (
         <section className="p-6 flex flex-col md:flex-row gap-8 items-center">
             <div className="w-full md:w-1/2">
-                <img
+                <Image
                     src="/sale.png" 
                     alt="New Year Sale"
+                    width={200}
+                    height={200}
                     className="w-full rounded-xl border-2 border-purple-400"
                 />
             </div>
