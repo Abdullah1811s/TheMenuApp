@@ -8,7 +8,7 @@ import RankCard from "@/components/customComponents/RankCard";
 import WeeklyRaffles from "@/components/customComponents/WeeklyRaffles";
 import CampaignPerformance from "@/components/customComponents/CampaignPerformance";
 import SpinWheel from "@/components/customComponents/SpinWheel";
-import { Gift, ShoppingBag, Trophy, Megaphone, DollarSign  , Bell} from "lucide-react";
+import { Gift, ShoppingBag, Trophy, Megaphone, DollarSign, Bell } from "lucide-react";
 
 export default function Home() {
   return (
@@ -24,9 +24,10 @@ export default function Home() {
               Unlock exclusive discounts, compete for exciting prizes, and earn rewards through referrals—join The Menu Portal today!
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button className="w-fit sm:w-fit bg-[#fbd23f] text-black px-6 py-4 sm:py-5 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-[#C0B060] hover:shadow-lg hover:scale-105">
+              <Button className="w-full sm:w-full md:w-fit bg-[#fbd23f] text-black px-6 py-4 sm:py-5 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-[#C0B060] hover:shadow-lg hover:scale-105">
                 Get Instant Access for Just R50!
               </Button>
+
               <Button className="w-full sm:w-56 bg-transparent border border-black text-black px-6 py-4 sm:py-5 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-gray-200 hover:shadow-md hover:scale-105">
                 Register Now
               </Button>
