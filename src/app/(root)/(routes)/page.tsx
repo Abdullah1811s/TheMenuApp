@@ -1,5 +1,6 @@
 import NavbarComponent from "@/components/customComponents/NavbarComponent";
 import { Button } from "@/components/ui/button";
+import { StatCard } from "@/components/customComponents/StatCard";
 import TitleCard from "@/components/customComponents/TitleCard";
 import Image from "next/image";
 import Lapboard from "@/components/customComponents/Lapboard";
@@ -7,8 +8,7 @@ import RankCard from "@/components/customComponents/RankCard";
 import WeeklyRaffles from "@/components/customComponents/WeeklyRaffles";
 import CampaignPerformance from "@/components/customComponents/CampaignPerformance";
 import SpinWheel from "@/components/customComponents/SpinWheel";
-import { StatCard } from "@/components/customComponents/StatCard";
-
+import { Gift, ShoppingBag, Trophy, Megaphone, DollarSign  , Bell} from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,14 +20,14 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight">
               Join <span className="text-[#DBC166] font-bold">The Menu</span> <br /> Today!
             </h1>
-            <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-600">
+            <p className="mt-4 text-sm sm:text-base md:text-lg">
               Unlock exclusive discounts, compete for exciting prizes, and earn rewards through referrals—join The Menu Portal today!
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Button className="w-full sm:w-56 bg-[#DBC166] text-black px-6 py-4 sm:py-5 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-[#C0B060] hover:shadow-md">
-                Sign Up Now for R50
+              <Button className="w-fit sm:w-fit bg-[#fbd23f] text-black px-6 py-4 sm:py-5 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-[#C0B060] hover:shadow-lg hover:scale-105">
+                Get Instant Access for Just R50!
               </Button>
-              <Button className="w-full sm:w-56 bg-transparent border border-black text-black px-6 py-4 sm:py-5 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-gray-200 hover:shadow-md">
+              <Button className="w-full sm:w-56 bg-transparent border border-black text-black px-6 py-4 sm:py-5 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-gray-200 hover:shadow-md hover:scale-105">
                 Register Now
               </Button>
 
@@ -47,127 +47,84 @@ export default function Home() {
         </section>
 
         <section className="mt-12 w-full text-center">
-          <TitleCard title="Vendor Onboarding Tools" />
+          <TitleCard title="Become a Vendor & Grow Your Business" IconComponent={ShoppingBag} />
           <div className="flex flex-col items-center justify-center gap-12 mt-12">
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl px-4 sm:px-8 md:px-16 lg:px-24">
+            <p className="mt-2 sm:text-xl md:text-xl">
               Register your business with The Menu Portal to reach more customers, showcase your offerings, and access exclusive tools like a personalized dashboard and automated contracts. Join today and grow with us!
             </p>
-            <Button className="w-56 bg-[#DBC166] text-black px-6 py-4 sm:py-5 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-[#C0B060] hover:shadow-md">
-              Register as Vendor
+            <Button className="w-fit sm:w-fit bg-[#fbd23f] text-black px-6 py-4 sm:py-5 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-[#C0B060] hover:shadow-lg hover:scale-105">
+              Join as a Vendor Get Free Exposure!
             </Button>
           </div>
         </section>
 
-        <section className="mt-12 w-full text-center">
-          <TitleCard title="Affiliate Marketing System" />
-          <div className="flex flex-col items-center justify-center gap-12 mt-12 w-full">
-            <p className="text-base sm:text-base md:text-lg lg:text-xl px-4 sm:px-8 md:px-16 lg:px-24">
-              Empower affiliates to grow and earn with ease through advanced tools and insights.
-            </p>
 
-            <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-7xl">
-
-              <div className="flex flex-col items-center justify-center text-center w-full md:w-1/2 flex-grow">
-                <h2 className="text-lg font-semibold">Automatic Referral Code Generation</h2>
-                <Image
-                  src="/referral.png"
-                  alt="Referral"
-                  width={200}
-                  height={200}
-                  className="rounded-xl bg-transparent mt-6"
-                />
-                <p className="text-base mt-6">
-                  Each affiliate receives a unique referral code upon registration, enabling them to track their performance and maximize conversions.
-                </p>
-              </div>
-
-              <div className="hidden md:block h-32 w-[2px] bg-black"></div>
-
-
-              <div className="flex flex-col items-center justify-center text-center w-full md:w-1/2 flex-grow">
-                <h2 className="text-lg font-semibold">Affiliate Dashboard</h2>
-                <Image
-                  src="/clock.png"
-                  alt="Affiliate Dashboard"
-                  width={200}
-                  height={200}
-                  className="rounded-xl bg-transparent mt-6"
-                />
-                <p className="text-base mt-6">
-                  A user-friendly dashboard designed for affiliates to monitor and manage their performance.
-                </p>
-              </div>
-            </div>
-
-          </div>
-        </section>
 
         <section className="mt-12 w-full text-center">
-          <TitleCard title="User Referral System" />
+
+          <TitleCard title="Earn Rewards with Our Referral Program!" IconComponent={Gift} />
+
           <div className="mt-12 w-full space-y-12">
 
             <div className="w-full flex flex-col md:flex-row items-center md:justify-between gap-6">
               <div className="md:w-1/2">
-                <h3 className="text-2xl font-semibold">Referral link generation</h3>
-                <p className="text-xl text-gray-600">
+                <h3 className="text-3xl font-semibold">Referral link generation</h3>
+                <p className="mt-2 text-sm sm:text-base md:text-lg">
                   Users can share personalized links for referrals
                 </p>
               </div>
               <Image
                 src="/RefLink.png"
                 alt="Referral Link"
-                width={400}
-                height={340}
+                width={300} // Reduce the default width
+                height={250} // Reduce the default height
                 className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[400px] rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:scale-110"
               />
             </div>
 
             <div className="w-full flex flex-col md:flex-row-reverse items-center md:justify-between gap-6">
               <div className="md:w-1/2">
-                <h3 className="text-2xl font-semibold">Milestone tracking</h3>
-                <p className="text-xl text-gray-600">
+                <h3 className="text-3xl font-semibold">Milestone tracking</h3>
+                <p className="mt-2 text-sm sm:text-base md:text-lg">
                   Progress indicators show referral achievements
                 </p>
               </div>
               <Image
                 src="/milestone.png"
                 alt="Milestone Tracking"
-                width={400}
-                height={340}
+                width={300} // Reduce the default width
+                height={250} // Reduce the default height
                 className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[400px] rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:scale-110"
               />
             </div>
 
             <div className="w-full flex flex-col md:flex-row items-center md:justify-between gap-6">
               <div className="md:w-1/2">
-                <h3 className="text-2xl font-semibold">Dynamic leaderboards</h3>
-                <p className="text-xl text-gray-600">
+                <h3 className="text-3xl font-semibold">Dynamic leaderboards</h3>
+                <p className="mt-2 text-sm sm:text-base md:text-lg">
                   Display top referrers to foster competition
                 </p>
               </div>
               <Image
                 src="/dynamicLead.png"
                 alt="Dynamic Leaderboards"
-                width={400}
-                height={340}
+                width={300} // Reduce the default width
+                height={250} // Reduce the default height
                 className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[400px] rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:scale-110"
               />
             </div>
           </div>
-
-
         </section>
 
-
         <section className="mt-12 w-full text-center">
-          <TitleCard title="Gamified Elements" />
+          <TitleCard title="Gamified Elements" IconComponent={Trophy} />
           <div className="flex flex-col items-center justify-center gap-12 mt-12 w-full">
-            <p className="text-base sm:text-base md:text-lg lg:text-xl px-4 sm:px-8 md:px-16 lg:px-24">
+            <p className="mt-2 text-base sm:text-base md:text-xl">
               Users earn points and rewards by achieving milestones
             </p>
-            <h1 className="font-bold text-start text-2xl flex items-center justify-center">
+            <h3 className="font-bold text-3xl flex items-center justify-center">
               Leaderboards
-            </h1>
+            </h3>
           </div>
 
           <div className="w-full flex items-center justify-center">
@@ -176,12 +133,11 @@ export default function Home() {
 
         </section>
 
-        <section className="mt-20 mb-20 w-full flex items-center justify-center">
+        <section className="mt-12 w-full flex items-center justify-center">
           <SpinWheel />
         </section>
 
-
-        <section className="mt-12 w-full">
+        <section className="mt-10 w-full">
           <RankCard />
         </section>
 
@@ -190,7 +146,10 @@ export default function Home() {
 
         </section>
         <section className="mt-12 w-full ">
-          <TitleCard title="Dynamic Advertising Banners" />
+          <TitleCard
+            title="Dynamic Advertising Banners"
+            IconComponent={Megaphone}
+          />
           <div className="mt-6">
             <CampaignPerformance />
           </div>
@@ -206,8 +165,56 @@ export default function Home() {
 
         </section>
 
+        <section className="mt-8 w-full text-center">
+          <TitleCard
+            title="Affiliate Marketing System"
+            IconComponent={DollarSign}
+          />
+          <div className="flex flex-col items-center gap-6 mt-6 w-full">
+            <p className="text-base sm:text-base md:text-xl max-w-2xl">
+              Empower affiliates to grow and earn with ease through advanced tools and insights.
+            </p>
+
+            <div className="flex flex-col md:flex-row items-center gap-6 w-full max-w-5xl">
+              <div className="flex flex-col items-center text-center w-full md:w-1/2">
+                <h2 className="text-lg font-semibold">Automatic Referral Code Generation</h2>
+                <Image
+                  src="/referral.png"
+                  alt="Referral"
+                  width={160}
+                  height={160}
+                  className="rounded-xl bg-transparent mt-4"
+                />
+                <p className="mt-2 text-base sm:text-base md:text-base">
+                  Each affiliate gets a unique referral code to track their performance and maximize conversions.
+                </p>
+              </div>
+
+              <div className="hidden md:block h-24 w-[1px] bg-gray-400"></div>
+
+              <div className="flex flex-col items-center text-center w-full md:w-1/2">
+                <h2 className="text-lg font-semibold">Affiliate Dashboard</h2>
+                <Image
+                  src="/clock.png"
+                  alt="Affiliate Dashboard"
+                  width={160}
+                  height={160}
+                  className="rounded-xl bg-transparent mt-4"
+                />
+                <p className="mt-2 text-base sm:text-base md:text-base">
+                  A user-friendly dashboard for affiliates to monitor and manage their performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="mt-12 w-full ">
-          <TitleCard title="Additional Update" />
+
+          <TitleCard
+            title="Additional Update"
+            IconComponent={Bell}
+          />
           <div className="mt-10">
             <div className="flex flex-col md:flex-row justify-center gap-10 py-12">
               <div className="border border-gray-300 rounded-2xl p-8 w-96 shadow-xl bg-white">
@@ -228,7 +235,7 @@ export default function Home() {
               <div className="border border-gray-300 rounded-2xl p-8 w-96 shadow-xl bg-white">
                 <Image src="/exclusive.png" alt="Membership Icon" width={200} height={200} className="w-20 mx-auto mb-6" />
                 <h2 className="text-2xl font-bold text-center">Free Membership Offer</h2>
-                <p className="mt-4 text-gray-700 text-lg">
+                <p className="mt-4 text-sm sm:text-base md:text-lg">
                   Users who pay the R50 access fee during the Waiting Page period will automatically receive one free month of the Lion Plan when the full platform launches. This process will be automated, with clear communication to users.
                 </p>
               </div>
@@ -246,7 +253,7 @@ export default function Home() {
               <Image src="/Logo.png" alt="The Menu Logo" width={200} height={200} className="w-10" />
               <div>
                 <h2 className="text-lg font-semibold text-[#d4a373]">THE MENU</h2>
-                <p className="text-xs uppercase tracking-wide text-gray-400">YOUR WORLD, YOUR WAY</p>
+                <p className="mt-4 text-sm sm:text-base md:text-lg">YOUR WORLD, YOUR WAY</p>
               </div>
             </div>
 

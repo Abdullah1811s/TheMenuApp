@@ -1,5 +1,7 @@
 "use client"
 import Image from "next/image";
+import TitleCard from "./TitleCard";
+import { Hourglass } from "lucide-react";
 
 const RankCard = () => {
   
@@ -35,8 +37,8 @@ const RankCard = () => {
 
   return (
     <div className="flex flex-col items-center space-y-10">
-      <h2 className="text-3xl font-bold">Countdown timers for ongoing raffles and games</h2>
-      <p className="text-2xl">
+     <TitleCard title="Countdown Timers for Ongoing Raffles and Games" IconComponent={Hourglass} />
+      <p className="text-2xl font-semibold">
         League will end in <span className="text-yellow-500 font-extrabold">03:12:59</span>
       </p>
 
@@ -62,8 +64,8 @@ const RankCard = () => {
 
          
             <h3 className="mt-4 text-2xl font-bold">{player.region}</h3>
-            <p className="text-lg text-gray-300 font-semibold">{player.name}</p>
-            <p className="text-lg text-gray-400 font-medium">{player.rp}</p>
+            <p className="mt-4 text-sm sm:text-base md:text-lg">{player.name}</p>
+              <p className="mt-4 text-sm sm:text-base md:text-lg">{player.rp}</p>
 
             <div className="mt-6 py-2 w-full text-center text-white text-xl font-bold bg-gray-700 rounded-xl">
               {player.rankName}

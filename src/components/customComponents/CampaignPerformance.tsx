@@ -55,7 +55,7 @@ const CampaignPerformance = () => {
             </div>
 
             <div className="w-full md:w-1/2">
-                <p className="text-gray-700 text-lg">
+                <p className=" text-xl">
                     Track the success of your campaigns with real-time performance insights. Admins and vendors
                     can easily monitor ad impressions and clicks to measure engagement and optimize results.
                 </p>

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Ticket } from "lucide-react";
 
 const WeeklyRaffles = () => {
     const prizes = [
@@ -12,7 +13,10 @@ const WeeklyRaffles = () => {
     return (
         <section className="py-20">
             <div className="flex items-center gap-6">
-                <h2 className="text-4xl font-bold">Weekly Raffles</h2>
+                <h2 className="text-4xl font-bold flex items-center gap-2">
+                    <Ticket className="w-8 h-8 text-yellow-500" />
+                    Weekly Raffles
+                </h2>
                 <div className="h-2 w-8/12 bg-[#E8C8A8]"></div>
             </div>
 

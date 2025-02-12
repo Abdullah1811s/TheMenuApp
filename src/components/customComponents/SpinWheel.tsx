@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import TitleCard from "./TitleCard";
 
 const prizes = [100, 500, 900, 160, 120, 700, 350, 60, 400, 320, 800, 200];
 
@@ -31,20 +32,12 @@ const SpinWheel = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-8 py-10">
       <div className="text-center">
-        <h1 className="font-bold text-3xl md:text-4xl text-gray-900">
-          🎡 Try Your Luck & Spin the Wheel!
-        </h1>
-        <p className="text-lg text-gray-600 mt-2">
-          Spin now to win **exciting rewards** and test your luck!
-        </p>
-
+        <TitleCard title=" 🎡 Try Your Luck & Spin the Wheel!" />
         <button
           onClick={spinWheel}
           disabled={spinning}
-          className="mt-6 px-6 py-3 bg-yellow-500 text-black font-bold rounded-full 
-            hover:bg-yellow-600 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-        >
-          {spinning ? "Spinning..." : "Spin for FREE 🎉"}
+          className="w-fit sm:w-fit bg-[#fbd23f] mt-4 text-black px-2 sm:py-2 text-base sm:text-lg rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-[#C0B060] hover:shadow-lg hover:scale-105">
+          {spinning ? "Spinning..." : "Spin & Win – Exclusive Rewards Await!🎉"}
         </button>
 
         {prize !== null && (
